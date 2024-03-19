@@ -1,6 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
 <style>
+    html, body {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+    }
+
 	.safe-area-bottom {
 		margin-bottom: env(safe-area-inset-bottom);
 	}
@@ -9,12 +15,17 @@
 		margin-right: env(safe-area-inset-right);
 	}
 	#square {
+        text-align: center;
+        position: absolute;
+        bottom: 0;
 		width: 100%;
-		height: 100%;
 		background: red;
 	}
 </style>
-
-<div id="square" class="safe-area-bottom safe-area-x"></div>
+<body>
+    <div id="square">
+        <p style="color: white" class="safe-area-x safe-area-bottom">Some text</p>
+    </div>
+</body>
 	
 </html>
